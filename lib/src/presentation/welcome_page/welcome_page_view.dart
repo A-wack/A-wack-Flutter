@@ -1,4 +1,3 @@
-import 'package:a_wack_flutter/src/presentation/welcome_page/widget/rotate_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -7,6 +6,8 @@ import 'package:styled_widget/styled_widget.dart';
 import 'package:a_wack_flutter/src/core/utils/font_text.dart';
 import 'package:a_wack_flutter/src/core/utils/a_wack_color.dart';
 import 'package:a_wack_flutter/src/core/utils/a_wack_button.dart';
+
+import 'package:a_wack_flutter/src/presentation/welcome_page/widget/rotate_animation.dart';
 
 class WelComePage extends StatelessWidget {
   const WelComePage({super.key});
