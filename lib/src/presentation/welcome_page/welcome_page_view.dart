@@ -1,4 +1,4 @@
-import 'package:a_wack_flutter/src/core/utils/rotate_animation.dart';
+import 'package:a_wack_flutter/src/presentation/welcome_page/widget/rotate_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
