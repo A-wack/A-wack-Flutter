@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:a_wack_flutter/src/presentation/main_page/main_page_view.dart';
+import 'package:a_wack_flutter/src/presentation/welcome_page/welcome_page_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ final GoRouter _router = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (_, state) => const HomePage(),
+      builder: (_, state) => const WelComePage(),
     ),
   ],
 );
