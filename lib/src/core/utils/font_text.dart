@@ -4,7 +4,7 @@ import 'package:styled_widget/styled_widget.dart';
 
 String font = 'Pretendard';
 
-class PretendardFont {
+class AWackFont {
   Text thin(String text, num fontSize, Color color) {
     return Text(text).textStyle(TextStyle(
       color: color,

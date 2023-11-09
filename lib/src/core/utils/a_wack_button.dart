@@ -4,7 +4,7 @@ import 'package:styled_widget/styled_widget.dart';
 
 import 'package:a_wack_flutter/src/core/utils/font_text.dart';
 
-PretendardFont font = PretendardFont();
+AWackFont font = AWackFont();
 
 class AWackButton extends StatelessWidget {
   final String text;
