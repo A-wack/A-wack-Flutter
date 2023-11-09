@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:styled_widget/styled_widget.dart';
 
 import 'package:a_wack_flutter/src/core/utils/font_text.dart';
@@ -14,7 +15,7 @@ class WelComePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    PretendardFont ptdFont = PretendardFont();
+    AWackFont aWackFont = AWackFont();
 
     return Scaffold(
       body: SingleChildScrollView(
@@ -44,19 +45,25 @@ class WelComePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ptdFont.medium('환영합니다', 114.67, AWackColor.black),
-                      ptdFont.medium('DSM 기상송 신청 서비스', 57.33, AWackColor.black),
+                      aWackFont.medium('환영합니다', 114.67, AWackColor.black),
+                      aWackFont.medium(
+                          'DSM 기상송 신청 서비스', 57.33, AWackColor.black),
                     ],
                   ).padding(left: 100.33.w, top: 35.83.h),
 
                   /// 시작하기 버튼
-                  const AWackButton(
-                    width: 1146.67,
-                    color: AWackColor.yellow,
-                    text: '시작하기',
-                    textColor: AWackColor.white,
-                    textPadding: 57.33,
-                  ).center().padding(top: 932.83.h),
+                  GestureDetector(
+                    onTap: () {
+                      context.go('/homepage');
+                    },
+                    child: const AWackButton(
+                      width: 1146.67,
+                      color: AWackColor.yellow,
+                      text: '시작하기',
+                      textColor: AWackColor.white,
+                      textPadding: 57.33,
+                    ).center().padding(top: 932.83.h),
+                  ),
 
                   /// 로그인 버튼
                   const AWackButton(
