@@ -54,7 +54,7 @@ class WelComePage extends StatelessWidget {
                   /// 시작하기 버튼
                   GestureDetector(
                     onTap: () {
-                      context.go('/homepage');
+                      context.go('/signup');
                     },
                     child: const AWackButton(
                       width: 1146.67,
