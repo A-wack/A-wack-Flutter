@@ -34,7 +34,7 @@ class TodaySongWidget extends StatelessWidget {
                   .light('Youtube로 확인하기', 35.83, AWackColor.black)
                   .padding(left: 25.08.w, right: 50.17.w),
             ],
-          ).padding(top: 42.h, bottom: 63.68.h),
+          ).padding(top: 42.h),
 
           /// 클릭 시 유튜브로 이동합니다.
           Padding(
