@@ -66,13 +66,18 @@ class WelComePage extends StatelessWidget {
                   ),
 
                   /// 로그인 버튼
-                  const AWackButton(
-                    width: 1146.67,
-                    color: AWackColor.gray,
-                    text: '로그인',
-                    textColor: AWackColor.black,
-                    textPadding: 57.33,
-                  ).center().padding(top: 35.92.h),
+                  GestureDetector(
+                    onTap: () {
+                      context.push('/signin');
+                    },
+                    child: const AWackButton(
+                      width: 1146.67,
+                      color: AWackColor.gray,
+                      text: '로그인',
+                      textColor: AWackColor.black,
+                      textPadding: 57.33,
+                    ).center().padding(top: 35.92.h),
+                  ),
                 ],
               ),
             ],
