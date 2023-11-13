@@ -32,7 +32,7 @@ class SignInPage extends StatelessWidget {
 
           /// 로그인 타이틀
           AWackFont()
-              .bold('로그인', 100.33, AWackColor.black)
+              .semiBold('로그인', 100.33, AWackColor.black)
               .padding(top: 43.33.h),
 
           /// 이메일 TextField
