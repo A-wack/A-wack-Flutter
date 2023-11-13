@@ -6,4 +6,5 @@ class AWackColor {
   static const Color black = Color(0xFF1E1E1E);
   static const Color white = Color(0xFFFFFFFF);
   static const Color more_gray = Color(0xFF909090);
+  static const Color red = Color(0xFFCA1B1B);
 }
