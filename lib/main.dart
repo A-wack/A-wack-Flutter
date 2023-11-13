@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:a_wack_flutter/src/presentation/welcome_page/welcome_page_view.dart';
 import 'package:a_wack_flutter/src/presentation/home_page/home_page_view.dart';
+import 'package:a_wack_flutter/src/presentation/sign_in_page/sign_in_page_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +20,10 @@ final GoRouter _router = GoRouter(
     GoRoute(
       path: '/homepage',
       builder: (_, state) => const HomePage(),
+    ),
+    GoRoute(
+      path: '/signin',
+      builder: (context, state) => const SignInPage(),
     ),
   ],
 );
