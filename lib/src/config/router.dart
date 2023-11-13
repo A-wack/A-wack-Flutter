@@ -1,9 +1,9 @@
 import 'package:go_router/go_router.dart';
 
-import 'package:a_wack_flutter/src/presentation/welcome_page/welcome_page_view.dart';
-import 'package:a_wack_flutter/src/presentation/home_page/home_page_view.dart';
-import 'package:a_wack_flutter/src/presentation/sign_in_page/sign_in_page_view.dart';
-import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_page_view.dart';
+import 'package:a_wack_flutter/src/presentation/welcome_page/welcome_page.dart';
+import 'package:a_wack_flutter/src/presentation/home_page/home_page.dart';
+import 'package:a_wack_flutter/src/presentation/sign_in_page/sign_in_page.dart';
+import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_page.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/',
