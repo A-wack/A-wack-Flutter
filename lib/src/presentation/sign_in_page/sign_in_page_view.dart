@@ -83,7 +83,12 @@ class SignInPage extends StatelessWidget {
             children: [
               AWackFont().light('계정이 없으신가요?', 43, AWackColor.black),
               SizedBox(width: 17.92.w),
-              AWackFont().light('회원가입', 43, AWackColor.yellow),
+              GestureDetector(
+                onTap: () {
+                  context.go('/signup');
+                },
+                child: AWackFont().light('회원가입', 43, AWackColor.yellow),
+              ),
             ],
           ).padding(top: 71.67.h),
         ],
