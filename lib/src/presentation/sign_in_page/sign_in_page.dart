@@ -85,7 +85,7 @@ class SignInPage extends StatelessWidget {
               SizedBox(width: 17.92.w),
               GestureDetector(
                 onTap: () {
-                  context.go('/signup');
+                  context.go('/signUp');
                 },
                 child: AWackFont().light('회원가입', 43, AWackColor.yellow),
               ),

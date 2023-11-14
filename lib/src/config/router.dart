@@ -13,17 +13,17 @@ final GoRouter router = GoRouter(
       builder: (_, state) => const WelComePage(),
       routes: [
         GoRoute(
-          path: 'signin',
+          path: 'signIn',
           builder: (context, state) => const SignInPage(),
         ),
         GoRoute(
-          path: 'signup',
+          path: 'signUp',
           builder: (context, state) => const SignUpPage(),
         )
       ],
     ),
     GoRoute(
-      path: '/homepage',
+      path: '/homePage',
       builder: (_, state) => const HomePage(),
     ),
   ],
