@@ -18,6 +18,7 @@ dependencies:
   flutter_svg: ^2.0.9
   styled_widget: ^0.4.1
   gap: ^3.0.1
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
