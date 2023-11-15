@@ -7,7 +7,6 @@ import 'package:styled_widget/styled_widget.dart';
 import 'package:a_wack_flutter/src/core/utils/font_text.dart';
 import 'package:a_wack_flutter/src/core/utils/a_wack_color.dart';
 import 'package:a_wack_flutter/src/core/utils/a_wack_button.dart';
-import 'package:a_wack_flutter/src/presentation/sign_in_page/widget/sign_in_textfield_widget.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({super.key});
@@ -38,18 +37,60 @@ class SignInPage extends StatelessWidget {
           /// 이메일 TextField
           Padding(
             padding: EdgeInsets.fromLTRB(71.67.w, 86.h, 71.67.w, 0.h),
-            child: SignInTextFieldWidget(
-              label: '이메일',
-              controller: emailController,
+            child: Container(
+              decoration: BoxDecoration(
+                color: AWackColor.gray,
+                borderRadius: BorderRadius.circular(35.83.w),
+              ),
+              child: Center(
+                child: TextField(
+                  controller: emailController,
+                  style: TextStyle(
+                    fontSize: 57.33.sp,
+                    fontFamily: 'Pretendard',
+                    fontWeight: FontWeight.w400,
+                  ),
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    labelText: '이메일',
+                    labelStyle: TextStyle(
+                      fontSize: 57.33.sp,
+                      fontFamily: 'Pretendard',
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                ).padding(left: 53.75.w),
+              ),
             ),
           ),
 
           /// 비밀번호 TextField
           Padding(
             padding: EdgeInsets.fromLTRB(71.67.w, 71.67.h, 71.67.w, 0.h),
-            child: SignInTextFieldWidget(
-              label: '비밀번호',
-              controller: passwordController,
+            child: Container(
+              decoration: BoxDecoration(
+                color: AWackColor.gray,
+                borderRadius: BorderRadius.circular(35.83.w),
+              ),
+              child: Center(
+                child: TextField(
+                  controller: passwordController,
+                  style: TextStyle(
+                    fontSize: 57.33.sp,
+                    fontFamily: 'Pretendard',
+                    fontWeight: FontWeight.w400,
+                  ),
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    labelText: '비밀번호',
+                    labelStyle: TextStyle(
+                      fontSize: 57.33.sp,
+                      fontFamily: 'Pretendard',
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
+                ).padding(left: 53.75.w),
+              ),
             ),
           ),
 
@@ -58,7 +99,7 @@ class SignInPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               AWackFont()
-                  .light('이메일 또는 비밀번호를 확인해주세요.', 28.67, AWackColor.red)
+                  .light('이메일 또는 비밀번호를 확인해주세요.', 45, AWackColor.red)
                   .padding(left: 125.42.w, top: 17.92.h),
             ],
           ),
