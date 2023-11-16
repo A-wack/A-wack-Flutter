@@ -22,9 +22,9 @@ final GoRouter router = GoRouter(
           builder: (context, state) => const SignUpPage(),
           routes: [
             GoRoute(
-              path: 'afterSignUp',
+              path: 'signUpEmail',
               builder: (context, state) => const SignUpEmailPage(),
-            )
+            ),
           ],
         )
       ],

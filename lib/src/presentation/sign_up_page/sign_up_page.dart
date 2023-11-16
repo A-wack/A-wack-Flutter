@@ -38,7 +38,7 @@ class SignUpPage extends StatelessWidget {
 
           GestureDetector(
             onTap: () {
-              context.go('/signUp/afterSignUp');
+              context.go('/signUp/signUpEmail');
             },
             child: const AWackButton(
               textPadding: 57.33,
