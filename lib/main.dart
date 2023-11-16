@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 
 import 'package:a_wack_flutter/src/config/router.dart';
 
-import 'package:a_wack_flutter/src/presentation/after_sign_up_page/provider/email_find_error.dart';
-import 'package:a_wack_flutter/src/presentation/after_sign_up_page/provider/save_email_text.dart';
+import 'package:a_wack_flutter/src/presentation/sign_up_email_page/provider/email_find_error.dart';
+import 'package:a_wack_flutter/src/presentation/sign_up_email_page/provider/save_email_text.dart';
 
 void main() {
   runApp(const MyApp());
