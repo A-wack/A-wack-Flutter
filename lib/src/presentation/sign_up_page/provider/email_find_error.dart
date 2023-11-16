@@ -5,7 +5,7 @@ class SignUpEmailFindError extends ChangeNotifier {
 
   bool get state => _state;
 
-  void findError(String text) {
+  Future<void> findError(String text) async {
     if (text.contains("@dsm.hs.kr")) {
       _state = true;
       notifyListeners();
