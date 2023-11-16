@@ -5,6 +5,7 @@ import 'package:a_wack_flutter/src/presentation/home_page/home_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_in_page/sign_in_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_email_page.dart';
+import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_validation_page.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/',
@@ -25,6 +26,10 @@ final GoRouter router = GoRouter(
               path: 'signUpEmail',
               builder: (context, state) => const SignUpEmailPage(),
             ),
+            GoRoute(
+              path: 'signUpValidation',
+              builder: (context, state) => const SignUpValidationPage(),
+            )
           ],
         )
       ],
