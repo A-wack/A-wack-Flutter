@@ -21,7 +21,8 @@ class SignUpEmailPage extends StatelessWidget {
     SignUpSaveEmailText saveEmailText =
         Provider.of<SignUpSaveEmailText>(context, listen: true);
 
-    TextEditingController emailController = TextEditingController();
+    TextEditingController emailController =
+        TextEditingController(text: saveEmailText.emailText);
 
     return Scaffold(
       body: Column(
@@ -110,9 +111,8 @@ class SignUpEmailPage extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   emailFindError.findError(emailController.text);
-
+                  saveEmailText.save(emailController.text);
                   if (emailFindError.state == true) {
-                    saveEmailText.save(emailController.text);
                     context.go('/signUp/signUpValidation');
                   }
                 },
