@@ -105,33 +105,38 @@ class SignUpEmailPage extends StatelessWidget {
                 ),
 
           /// 다음으로 버튼
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              GestureDetector(
-                onTap: () {
-                  emailFindError.findError(emailController.text);
-                  saveEmailText.save(emailController.text);
-                  if (emailFindError.state == true) {
-                    context.go('/signUp/signUpValidation');
-                  }
-                },
-                child: Container(
-                  width: 358.33.w,
-                  decoration: BoxDecoration(
-                    color: AWackColor.yellow,
-                    borderRadius: BorderRadius.circular(35.83.w),
+          Padding(
+            padding: emailFindError.state == true
+                ? EdgeInsets.only(top: 46.59.h, right: 68.08.w)
+                : EdgeInsets.only(top: 25.08.h, right: 68.08.w),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    emailFindError.findError(emailController.text);
+                    saveEmailText.save(emailController.text);
+                    if (emailFindError.state == true) {
+                      context.go('/signUp/signUpValidation');
+                    }
+                  },
+                  child: Container(
+                    width: 358.33.w,
+                    decoration: BoxDecoration(
+                      color: AWackColor.yellow,
+                      borderRadius: BorderRadius.circular(35.83.w),
+                    ),
+                    child: Center(
+                      child: const Icon(
+                        Icons.arrow_forward,
+                        color: AWackColor.white,
+                      ).padding(vertical: 40.h),
+                    ),
                   ),
-                  child: Center(
-                    child: const Icon(
-                      Icons.arrow_forward,
-                      color: AWackColor.white,
-                    ).padding(vertical: 40.h),
-                  ),
-                ),
-              )
-            ],
-          ).padding(top: 25.08.h, right: 68.08.w)
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
