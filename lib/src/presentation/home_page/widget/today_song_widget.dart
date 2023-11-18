@@ -46,7 +46,7 @@ class TodaySongWidget extends StatelessWidget {
             child: AWackFont().regular(
               '클릭 시 유튜브로 이동합니다.',
               28.67,
-              AWackColor.more_gray,
+              AWackColor.gray_9090,
             ),
           ),
         ],
