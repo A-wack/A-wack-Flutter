@@ -7,6 +7,7 @@ import 'package:a_wack_flutter/src/presentation/sign_in_page/sign_in_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_email_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_validation_page.dart';
+import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_info_page.dart';
 
 CustomTransitionPage noAnimation(Widget page) {
   return CustomTransitionPage(
@@ -45,6 +46,12 @@ final GoRouter router = GoRouter(
               path: 'signUpValidation',
               pageBuilder: (context, state) {
                 return noAnimation(const SignUpValidationPage());
+              },
+            ),
+            GoRoute(
+              path: 'signUpInfo',
+              pageBuilder: (context, state) {
+                return noAnimation(const SignUpInfoPage());
               },
             ),
           ],
