@@ -8,6 +8,7 @@ import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_email_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_validation_page.dart';
 import 'package:a_wack_flutter/src/presentation/sign_up_page/sign_up_info_page.dart';
+import 'package:a_wack_flutter/src/presentation/application_song_page/application_song_page.dart';
 
 CustomTransitionPage noAnimation(Widget page) {
   return CustomTransitionPage(
@@ -61,6 +62,11 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/homePage',
       builder: (_, state) => const HomePage(),
+      routes: [
+        GoRoute(
+            path: 'applicationSong',
+            builder: (context, state) => const ApplicationSongPage()),
+      ],
     ),
   ],
 );
