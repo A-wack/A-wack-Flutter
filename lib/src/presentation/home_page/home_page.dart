@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:styled_widget/styled_widget.dart';
 import 'package:gap/gap.dart';
 
@@ -67,7 +68,7 @@ class HomePage extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.fromLTRB(50.17.w, 50.17.h, 50.17.w, 50.17.h),
               child: SizedBox(
-                height: 1700.h,
+                height: 1470.h,
                 child: ListView.separated(
                   padding: EdgeInsets.zero,
                   itemCount: applicationList.length,
@@ -92,6 +93,35 @@ class HomePage extends StatelessWidget {
 
           ///
         ],
+      ),
+      bottomNavigationBar: SizedBox(
+        width: double.infinity,
+        height: 250.h,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {
+                context.go('/homePage');
+              },
+              icon: Icon(
+                Icons.home,
+                size: 100.w,
+              ),
+            ),
+            IconButton(
+              onPressed: () {
+                context.go('/homePage/applicationSong');
+              },
+              icon: Icon(
+                Icons.music_note,
+                size: 100.w,
+                color: AWackColor.gray_9999,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
