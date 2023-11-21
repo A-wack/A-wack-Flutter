@@ -19,7 +19,7 @@ class ApplicationSongPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AWackFont()
-              .medium('기상송 신청 🎤', 71.67, AWackColor.black)
+              .medium('기상송 신청 🎤', 71.66, AWackColor.black)
               .padding(top: 190.h, left: 103.w),
           Center(
             /// 가장 바깥쪽
